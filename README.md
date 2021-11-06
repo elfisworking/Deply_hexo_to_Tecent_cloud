@@ -14,11 +14,11 @@ About Tencent Static Web Hosting: [Link](https://console.cloud.tencent.com/tcb/h
 ## Usage
 **Inputs**
 
-| argument | Required | Description |
-| --- | --- | --- | --- |
-| `cloud_secret_id` | **yes** | Access key of cloud development: secretId|
-| `cloud_secret_key` | **yes** |Access key of cloud development: secretKey|
-| `cloud_env_id`| **yes**  | Cloud development environment ID: envId |
+argument | Required | Description 
+ --- | --- | ---  
+ `cloud_secret_id` | **yes** | Access key of cloud development: secretId
+`cloud_secret_key` | **yes** |Access key of cloud development: secretKey
+`cloud_env_id`| **yes**  | Cloud development environment ID: envId 
 
 Getting **secretId** and **secretKey** by Visiting Tencent Cloud [Access management](https://console.cloud.tencent.com/cam/capi).
 
@@ -27,9 +27,10 @@ Gettting **envId** by visiting Tencent Cloudbase development [console](https://c
 About **secretId**, **secretKey** and **envId**, you can visit this [website](https://ytlee.cn/2021/03/use-github-actions-to-automatically-publish-static-blogs-to-tencent-cloud-static-website/) which can guide you to get your **secretId** **secretKey** and **envId**.
 
 **Notice**
+
 `cloudbaserc.json` file which is used by `cloudbase-action` is not needed.
 
-For installing third party node modules, please make sure there is a  `package.json` file
+For installing third party node modules, please make sure there is a  `package.json` file in your hexo project.
 ## Example
 ```yml
 name: Deploy To Tencent Cloud
