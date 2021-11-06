@@ -22,5 +22,5 @@ runs:
     - ${{ inputs.cloud_secret_key }}
     - ${{ inputs.cloud_env_id}}
 branding:
-  icon: 'package'  
-  color: 'blue'
+  icon: 'upload-cloud'  
+  color: 'white'
