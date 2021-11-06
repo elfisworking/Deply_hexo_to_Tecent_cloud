@@ -1,5 +1,5 @@
 name: 'Deploy Hexo to Tencent Cloudbase environment'
-description: 'Build hexo source code and deploy to Tencent Cloudbase environment'
+description: 'Build hexo source code and upload it to Tencent cloud static website hosting'
 author: 'elfisworking'
 inputs:
   cloud_secret_id:
