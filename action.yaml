@@ -1,0 +1,26 @@
+name: 'Deploy Hexo to Tencent Cloudbase environment'
+description: 'Build hexo source code and deploy to Tencent Cloudbase environment'
+author: 'elfisworking'
+inputs:
+  cloud_secret_id:
+    description: 'cloud development secretId'
+    required: true
+  cloud_secret_key:
+    description: cloud development secretKey'
+    required: true
+  cloud_env_id:
+    description: 'cloud development environment Id'
+    required: true
+outputs:
+  notify: # id of output
+    description: 'The notification of deployment result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cloud_secret_id }}
+    - ${{ inputs.cloud_secret_key }}
+    - ${{ inputs.cloud_env_id}}
+branding:
+  icon: 'package'  
+  color: 'blue'
